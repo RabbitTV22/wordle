@@ -1,0 +1,22 @@
+/* style.css */
+.label {
+    -fx-font-size: 20px;
+    -fx-padding: 10px;
+}
+
+.correct {
+    -fx-background-color: green;
+}
+
+.incorrect {
+    -fx-background-color: orange;
+}
+
+.not-in-word {
+    -fx-background-color: grey;
+}
+
+.guessed-letter {
+    -fx-font-size: 20px;
+    -fx-padding: 10px;
+}
