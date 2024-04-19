@@ -63,7 +63,7 @@ public class Wordle extends Application {
     }
 
     private void initializeGame() { //might want to change the path of words.txt
-        List<String> words = readWordsFromFile("C:\\Users\\slach\\IdeaProjects\\Wordle\\src\\main\\java\\me\\rabbittv\\words.txt");
+        List<String> words = readWordsFromFile("words.txt");
         Random random = new Random();
         targetWord = words.get(random.nextInt(words.size()));
         guessedWord = new StringBuilder("".repeat(targetWord.length()));
@@ -96,7 +96,7 @@ public class Wordle extends Application {
         }
 
         // Check if the guessed word exists in the list of valid words
-        if (!readWordsFromFile("C:\\Users\\slach\\IdeaProjects\\Wordle\\src\\main\\java\\me\\rabbittv\\words.txt").contains(guess.toUpperCase())) {
+        if (!readWordsFromFile("words.txt").contains(guess.toUpperCase())) {
             System.out.println("The word \"" + guess + "\" does not exist in the list.");
             return;
         }
